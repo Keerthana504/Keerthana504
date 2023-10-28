@@ -1,0 +1,54 @@
+.header {
+  text-align: center;
+}
+
+.blog-post,
+h2 {
+  color: blue;
+}
+
+.blog-post1 h1 {
+  text-align: center;
+  color: red;
+}
+.blog-post1 p {
+  font-size: 20px;
+}
+
+#awesome {
+  width: 150px;
+  height: 150px;
+  background-color: green;
+  border-radius: 15px;
+}
+
+#box {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  border: 3px solid black;
+}
+
+.text-1 {
+  font-size: 15px;
+}
+
+.text-2 {
+  font-size: 30px;
+}
+
+.text-3 {
+  font-size: 45px;
+}
+
+.text-4 {
+  font-size: 60px;
+}
+
+.text-5 {
+  font-size: 75px;
+}
+
+.text-6 {
+  font-size: 90px;
+}/*# sourceMappingURL=style.css.map */
