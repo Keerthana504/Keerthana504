@@ -1,7 +1,11 @@
+html {
+  font-size: 16px;
+}
+
 body {
   margin: 0;
-  font-family: sans-serif;
   background: #f5f6f7;
+  font-family: "Open Sans", sans-serif;
 }
 
 .canvas {
@@ -106,17 +110,9 @@ affecting their position and the space around them. */
   width: 350px;
 }
 
-* {
+/* * {
   box-sizing: border-box;
-}
-
-html {
-  font-size: 16px;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-}
+} */
 
 .label {
   border: 2px solid black;
@@ -208,3 +204,8 @@ p {
   padding: 0px 8px;
   text-indent: -8px;
 }
+
+/* : This property specifies the aspect ratio of the element. 
+It sets the width-to-height ratio to 35/4, which means the element's width is 35 units, and its height is 4 units. */
+/*  This means the element's width will be at least 100px but can grow up to 18% of the viewport width (18vw), 
+depending on which value is larger. */
