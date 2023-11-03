@@ -1,0 +1,109 @@
+#image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0px;
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  color: #2f4f4f;
+  background-color: #ffffff;
+}
+
+h1,
+header p {
+  color: #fffafa;
+}
+
+img {
+  display: block;
+}
+
+header {
+  text-align: center;
+  background-color: #ff7f50;
+  padding: 20px;
+  border-bottom: 5px solid #ffd700;
+  margin: 0px;
+  font-family: cursive, sans-serif;
+}
+.no-margin {
+  margin: 0px;
+}
+
+figure {
+  margin: 0px;
+}
+
+#img-caption {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.tribute-info,
+#personal-note {
+  max-width: 650px;
+  text-align: left;
+  margin: 50px auto;
+}
+
+.image-style {
+  width: 35%;
+  margin: 20px;
+  border: 2px solid #dfdfe2;
+  border-radius: 25px;
+  height: auto;
+  max-width: 550px;
+}
+
+.image-sofa {
+  width: 75%;
+  margin: 0px;
+  max-width: 200px;
+  height: 100px;
+  margin: 10px;
+}
+
+footer {
+  padding: 0.25px;
+  background: #213343;
+  color: #fffafa;
+  font-size: 2rem;
+  font-family: cursive;
+  display: flex;
+  justify-content: center;
+  /* margin-top: 110px; */
+}
+
+.img-para {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+
+.img-para p {
+  margin: auto;
+}
+
+.video-container {
+  position: relative;
+  /* padding-bottom: 56.25%; 16:9 aspect ratio (height/width) */
+  /* padding-top: 30px; Optional padding for spacing between the video and other content */
+  height: 350px;
+  /* overflow: hidden; */
+}
+
+.video-container iframe {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  width: 100%;
+  height: 100%;
+}
+
+.m-bottom {
+  margin-bottom: 100px !important;
+}
