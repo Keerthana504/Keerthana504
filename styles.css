@@ -1,0 +1,88 @@
+/* :root is a pseudo-class selector that represents the highest-level or root element in an HTML document. 
+It is typically used to define global CSS variables, also known as CSS custom properties. 
+These custom properties can store values such as colors, font sizes, spacing, 
+:root selector is often placed in the CSS file's beginning */
+:root {
+  --neutral: #3aafa9;
+  --base-100: #feffff;
+  --neutral-focus: #17252a;
+  --accent: ;
+}
+/*  asterisk (*) is a universal selector, which targets every element on the page.  */
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Noto Serif", serif;
+  text-align: center;
+  background-color: var(--neutral);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+}
+/* justify-center" is used to horizontally center elements within their container, 
+  while "align-items-center" is used to vertically center elements within their container */
+.nav-bar {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--neutral);
+  padding: 20px;
+  font-size: 20px;
+  border-bottom: 2px solid var(--neutral-focus);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  /* font-family: serif; */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--base-100);
+  padding: 10px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+/* vh is a relative unit of measurement that represents a percentage of the height of the viewport
+  If you want an element to have a height that is a percentage of the viewport's height, you would use vh.
+  px is an absolute unit of measurement that represents a single pixel on the screen.
+   If you want an element to have an exact, fixed size, regardless of the viewport or screen size */
+section {
+  min-height: 100vh;
+  padding: 70px 0;
+}
+
+#welcome-section {
+  background-color: var(--neutral);
+  color: var(--base-100);
+  display: flex;
+  flex-direction: column;
+}
+
+#welcome-section h1 {
+  margin-top: 30vh;
+}
+#welcome-section p {
+  color: var(--neutral-focus);
+  font-size: 25px;
+  margin: 25px 0;
+  font-style: italic;
+}

@@ -6,6 +6,36 @@
     <meta name="description" content="Tribute page" />
     <title id="title">Tribute Page</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      function makeApiRequest() {
+        var category = "happiness";
+        var apiKey = "8vbNHEPam7E0Cl6HyQyhT5y7Bg4oXrb5DWwWC9Yd"; // Replace with your actual API key
+
+        $.ajax({
+          method: "GET",
+          url: "https://api.api-ninjas.com/v1/quotes?category=" + category,
+          headers: { "X-Api-Key": apiKey },
+          contentType: "application/json",
+          success: function (result) {
+            console.log(result[0].quote);
+            //$("#thought").append(result[0].quote);
+            let quote = result[0].quote + " --- " + result[0].author;
+            $("#thought").text(quote);
+          },
+          error: function ajaxError(jqXHR) {
+            console.error("Error: ", jqXHR.responseText);
+          },
+        });
+      }
+      // Call makeApiRequest immediately
+      makeApiRequest();
+
+      // Schedule makeApiRequest to run every 5 minutes (300,000 milliseconds) using jQuery
+      $(document).ready(function () {
+        setInterval(makeApiRequest, 30000);
+      });
+    </script>
   </head>
   <body>
     <main id="main">
@@ -25,7 +55,8 @@
           Pheobe - Img Src: Google
         </figcaption>
       </figure>
-      <section role="region" aria-labelledby="about-friends">
+      <section id="content" role="region" aria-labelledby="about-friends">
+        <h3 id="thought"></h3>
         <div id="about-friends" class="tribute-info">
           <p>
             F.R.I.E.N.D.S is an American Sitcom that was aired in early 1990’s
@@ -33,7 +64,7 @@
             in this generation also.
           </p>
           <p>
-            Friends revolves around 6 group of 6 pals, that are neighbours in an
+            Friends revolves around a group of 6 pals, that are neighbours in an
             apartment at NYC. They all gossip, chat and have coffees at a
             special place called <strong>Central Perk </strong>and this place is
             still known for the show.
@@ -53,27 +84,55 @@
             src="../images/Chandler-1.jpg"
             alt="A smiling picture of Chandler"
           />
-          <p>
-            In a personal note, I binge-watched Friends during the pandemic due
-            to its innocence, unique concept, and extremely relatable journey to
-            the present times of my life. I've seen the show several times over
-            and yet never get tired of it.  I also bought a miniature of FRIENDS
-            to cherish their memories at home. 
-          </p>
+          <div class="message">
+            <p>
+              The character that Mathew played was Chandler Bing, an IT
+              professional and investor. Chandler is by nature a gentleman,
+              witty, and sarcastic. Chandler passes comments and pulls his
+              buddies' legs in awkward moments.
+            </p>
+            <p>
+              Chandler's character undergoes significant growth over the course
+              of the series. He starts as the most commitment-phobic member of
+              the group but gradually matures and becomes more responsible,
+              especially after his relationship with Monica.
+            </p>
+            <p>
+              Chandler is known for his distinctive use of the phrase "Could I
+              BE any more...?" as a way to emphasize his sarcasm.
+            </p>
+          </div>
         </div>
         <div class="img-para">
-          <p>
-            Friends will never feel the same now that Mathew Perry has passed
-            away suddenly. Everybody feels an irreplaceable gap in their hearts.
-            It is similar to losing a family member or close friend.
-          </p>
+          <div class="message">
+            <p>
+              On a personal note, I binge-watched Friends during the pandemic
+              due to its innocence, unique concept, and extremely relatable
+              journey to the present times of my life. I've seen the show
+              several times over and yet never get tired of it.  I also bought a
+              miniature of FRIENDS to cherish their memories at home. 
+            </p>
+            <p>
+              Friends will never feel the same now that Mathew Perry has passed
+              away suddenly. Everybody feels an irreplaceable gap in their
+              hearts. It is similar to losing a family member or close friend.
+            </p>
+            <p>
+              <em>
+                Chandler Bing - We continue to use the sarcastic jokes you left
+                behind in our everyday conversations. We shall always carry you
+                in our hearts.
+              </em>
+            </p>
+          </div>
+
           <img
             class="image-style"
             src="../images/Chandler-2.jpg"
             alt="Chandler and Joey hugging"
           />
         </div>
-        <div id="personal-note" class="video-container m-bottom">
+        <div id="personal-note" class="video-container">
           <iframe
             width="560"
             height="315"
@@ -82,38 +141,82 @@
             allowfullscreen
             title="friends-theme-video"
           ></iframe>
-          <p>
-            Chandler Bing - We continue to use the sarcastic jokes you left
-            behind in our everyday conversations. We shall always carry you in
-            our hearts.
-          </p>
         </div>
-        <div class="tribute-info">
+        <div class="tribute-info" id="">
           <p>
             <em>
-              "We will always cherish the joy, the light, the blinding
-              intelligence he brought to every moment – not just to his work,
-              but in life as well" --- Kauffman and Crane , Directors</em
-            >
-          </p>
-          <p>
-            If you have time, you should read more about this incredible show on
-            <a
-              id="tribute-link"
-              href="https://en.wikipedia.org/wiki/Friends"
-              target="_blank"
-              >Wikipedia</a
+              <p>
+                "We will always cherish the joy, the light, the blinding
+                intelligence he brought to every moment – not just to his work,
+                but in life as well"
+              </p>
+              <p>
+                "He was a brilliant talent. It’s a cliche to say that an actor
+                makes a role their own, but in Matthew’s case, there are no
+                truer words
+              </p>
+              <p>
+                "From the day we first heard him embody the role of Chandler
+                Bing, there was no one else for us."
+              </p>
+              <p>"He was always the funniest person in the room."</p>
+              <p>
+                "More than that, he was the sweetest, with a giving and selfless
+                heart."
+              </p>
+              <p>--- Kauffman and Crane , Directors</p></em
             >
           </p>
         </div>
       </section>
+      <section id="comments">
+        <div class="comment-container" dataset="first-comment" id="first-reply">
+          <p>Please leave your thoughts here</p>
+          <div class="comment-card">
+            <h4>The First Comment</h4>
+            <p>Chandler Bing is heart</p>
+            <div class="comment-card-footer">
+              <div>Likes 123</div>
+              <div>Dislikes 23</div>
+              <div class="show-replies">Reply</div>
+            </div>
+            <div class="comment-card">
+              <h4>The First Comment</h4>
+              <p>Chandler Bing is heart</p>
+              <div class="comment-card-footer">
+                <div>Likes 123</div>
+                <div>Dislikes 23</div>
+                <div class="show-replies">Reply</div>
+              </div>
+              <div class="comment-container">
+                <div class="comment-card">
+                  <h4>The First Comment</h4>
+                  <p>Chandler Bing is heart</p>
+                  <div class="comment-card-footer">
+                    <div>Likes 123</div>
+                    <div>Dislikes 23</div>
+                    <div class="show-replies">Reply</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="link">
+        <p>
+          If you have time, you should read more about this incredible person on
+          <a
+            id="tribute-link"
+            href="https://en.wikipedia.org/wiki/Matthew_Perry"
+            target="_blank"
+            >Wikipedia</a
+          >
+        </p>
+      </div>
       <footer>
-        <!-- <img
-          class="image-style image-sofa"
-          src="../images/Couch-2.jpg"
-          alt="friends couch"
-        /> -->
-        <p>Cause you'are there for me too...</p>
+        <p>Cause you're there for me too...</p>
       </footer>
     </main>
   </body>

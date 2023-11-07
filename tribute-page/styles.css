@@ -1,3 +1,11 @@
+*,
+*::after,
+*::before {
+  /* /* margin: 0px; */
+  /* padding: 0px; */
+  box-sizing: border-box;
+}
+
 #image {
   width: 100%;
   max-width: 100%;
@@ -10,11 +18,23 @@ body {
   font-family: sans-serif;
   color: #2f4f4f;
   background-color: #ffffff;
+  min-height: 100vh;
 }
 
 h1,
 header p {
   color: #fffafa;
+}
+
+h3 {
+  text-align: center;
+  font-family: cursive, sans-serif;
+  font-weight: 900;
+  color: #fffafa;
+  background-color: #b22222;
+  border: 2px solid #f4a460;
+  border-radius: 20px;
+  padding: 10px;
 }
 
 img {
@@ -23,7 +43,7 @@ img {
 
 header {
   text-align: center;
-  background-color: #ff7f50;
+  background-color: #b22222;
   padding: 20px;
   border-bottom: 5px solid #ffd700;
   margin: 0px;
@@ -44,10 +64,11 @@ figure {
 }
 
 .tribute-info,
-#personal-note {
+#personal-note,
+#comments {
   max-width: 650px;
   text-align: left;
-  margin: 50px auto;
+  margin: 20px auto;
 }
 
 .image-style {
@@ -84,9 +105,9 @@ footer {
   margin: auto;
 }
 
-.img-para p {
+/* .img-para p {
   margin: auto;
-}
+} */
 
 .video-container {
   position: relative;
@@ -106,4 +127,72 @@ footer {
 
 .m-bottom {
   margin-bottom: 100px !important;
+}
+
+#link p {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.message {
+  display: inline-block;
+  margin: auto;
+}
+
+.comment-container {
+  /* / background-color: #fffff0;
+  border: 2px solid #ffffd0; */
+  /* border-radius: 2px;
+  padding: 10px 35px; */
+  font-size: 16px;
+  min-height: 100%;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+}
+
+.comment-card p,
+.comment-card h4 {
+  margin: 1rem;
+  padding: 0px;
+}
+
+.comment-container::before {
+  content: "";
+  background-color: rgb(166, 165, 165);
+  position: absolute;
+  min-height: 100%;
+  width: 1px;
+  left: -5px;
+}
+
+.comment-card {
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  border: 2px solid gray;
+  border-radius: 0.5rem;
+  min-width: 100%;
+  margin: 10px;
+  padding: 5px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+.comment-container:not(:first-child) {
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+
+.comment-card-footer {
+  display: flex;
+  font-size: 0.85rem;
+  justify-content: flex-end;
+  align-items: center;
+  opacity: 0.6;
+  gap: 30px;
+}
+
+.show-replies {
+  cursor: pointer;
 }
