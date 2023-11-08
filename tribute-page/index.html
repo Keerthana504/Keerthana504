@@ -7,35 +7,6 @@
     <title id="title">Tribute Page</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script>
-      function makeApiRequest() {
-        var category = "happiness";
-        var apiKey = "8vbNHEPam7E0Cl6HyQyhT5y7Bg4oXrb5DWwWC9Yd"; // Replace with your actual API key
-
-        $.ajax({
-          method: "GET",
-          url: "https://api.api-ninjas.com/v1/quotes?category=" + category,
-          headers: { "X-Api-Key": apiKey },
-          contentType: "application/json",
-          success: function (result) {
-            console.log(result[0].quote);
-            //$("#thought").append(result[0].quote);
-            let quote = result[0].quote + " --- " + result[0].author;
-            $("#thought").text(quote);
-          },
-          error: function ajaxError(jqXHR) {
-            console.error("Error: ", jqXHR.responseText);
-          },
-        });
-      }
-      // Call makeApiRequest immediately
-      makeApiRequest();
-
-      // Schedule makeApiRequest to run every 5 minutes (300,000 milliseconds) using jQuery
-      $(document).ready(function () {
-        setInterval(makeApiRequest, 30000);
-      });
-    </script>
   </head>
   <body>
     <main id="main">
@@ -170,40 +141,79 @@
         </div>
       </section>
       <section id="comments">
-        <div class="comment-container" dataset="first-comment" id="first-reply">
-          <p>Please leave your thoughts here</p>
+        <p>Please leave your thoughts here</p>
+        <div class="comment-container opened" id="first-comment">
           <div class="comment-card">
             <h4>The First Comment</h4>
             <p>Chandler Bing is heart</p>
             <div class="comment-card-footer">
               <div>Likes 123</div>
               <div>Dislikes 23</div>
-              <div class="show-replies">Reply</div>
+              <div class="show-replies">Reply 2</div>
             </div>
+          </div>
+          <div
+            class="comment-container"
+            dataset="first-comment"
+            id="first-reply"
+          >
             <div class="comment-card">
-              <h4>The First Comment</h4>
+              <h4>The First Reply</h4>
               <p>Chandler Bing is heart</p>
               <div class="comment-card-footer">
                 <div>Likes 123</div>
                 <div>Dislikes 23</div>
-                <div class="show-replies">Reply</div>
+                <div class="show-replies">Reply 1</div>
               </div>
-              <div class="comment-container">
-                <div class="comment-card">
-                  <h4>The First Comment</h4>
-                  <p>Chandler Bing is heart</p>
-                  <div class="comment-card-footer">
-                    <div>Likes 123</div>
-                    <div>Dislikes 23</div>
-                    <div class="show-replies">Reply</div>
-                  </div>
+            </div>
+            <div
+              class="comment-container"
+              dataset="first-reply"
+              id="first-reply-1"
+            >
+              <div class="comment-card">
+                <h4>Reply to The First reply</h4>
+                <p>Chandler Bing is heart</p>
+                <div class="comment-card-footer">
+                  <div>Likes 123</div>
+                  <div>Dislikes 23</div>
+                  <div class="show-replies">Reply 0</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="comment-container"
+            dataset="first-comment"
+            id="second-reply"
+          >
+            <div class="comment-card">
+              <h4>The second reply</h4>
+              <p>Chandler Bing is heart</p>
+              <div class="comment-card-footer">
+                <div>Likes 123</div>
+                <div>Dislikes 23</div>
+                <div class="show-replies">Reply 1</div>
+              </div>
+            </div>
+            <div
+              class="comment-container"
+              dataset="second-reply"
+              id="second-reply-1"
+            >
+              <div class="comment-card">
+                <h4>Reply to The second reply</h4>
+                <p>Chandler Bing is heart</p>
+                <div class="comment-card-footer">
+                  <div>Likes 123</div>
+                  <div>Dislikes 23</div>
+                  <div class="show-replies">Reply 0</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
       <div id="link">
         <p>
           If you have time, you should read more about this incredible person on
@@ -219,5 +229,6 @@
         <p>Cause you're there for me too...</p>
       </footer>
     </main>
+    <script src="./index.js"></script>
   </body>
 </html>

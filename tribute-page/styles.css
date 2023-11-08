@@ -150,11 +150,16 @@ footer {
   position: relative;
   margin: 0px;
   padding: 0px;
+  display: none;
+}
+
+.comment-container.opened {
+  display: block;
 }
 
 .comment-card p,
 .comment-card h4 {
-  margin: 1rem;
+  margin: 0.5rem;
   padding: 0px;
 }
 
@@ -169,19 +174,18 @@ footer {
 
 .comment-card {
   width: 100%;
-  padding: 20px;
   background-color: white;
   border: 2px solid gray;
   border-radius: 0.5rem;
   min-width: 100%;
-  margin: 10px;
+  margin: 2px;
   padding: 5px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
 }
 
 .comment-container:not(:first-child) {
-  margin-left: 3rem;
-  margin-top: 1rem;
+  margin-left: 1.5rem;
+  margin-top: 0.75rem;
 }
 
 .comment-card-footer {
