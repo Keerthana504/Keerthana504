@@ -24,6 +24,8 @@ makeApiRequest();
 // Schedule makeApiRequest to run every 5 minutes (300,000 milliseconds) using jQuery
 $(document).ready(function () {
   setInterval(makeApiRequest, 30000);
+  //$("#post-btn").css("display", "none");
+  $("#post-btn").removeClass("display-btn");
 });
 
 let showContaniers = document.querySelectorAll(".show-replies");
@@ -46,3 +48,10 @@ showContaniers.forEach((btn) => {
     }
   });
 });
+
+let userComment = document.getElementById("user-comment");
+// if (!document.getElementById("post-btn")) {
+userComment.addEventListener("keypress", (e) => {
+  $("#post-btn").addClass("display-btn");
+});
+// }
