@@ -219,12 +219,18 @@ footer {
 .comment-card-footer {
   display: flex;
   font-size: 0.85rem;
+  justify-content: space-between;
+  opacity: 0.6;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.comment-card-footer .like {
+  display: flex;
   justify-content: flex-end;
   align-items: center;
-  opacity: 0.6;
   gap: 12px;
-  margin-right: 12px;
-  font-weight: 600;
+  cursor: pointer;
 }
 
 .show-replies {

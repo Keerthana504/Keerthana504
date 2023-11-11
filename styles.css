@@ -36,7 +36,8 @@ h1 {
 .nav-bar {
   display: flex;
   /* align-items: center; */
-  justify-content: center;
+  justify-content: space-between;
+  align-items: end;
   position: fixed;
   top: 0;
   width: 100%;
@@ -56,6 +57,7 @@ h1 {
   text-decoration: none;
   color: var(--base-100);
   padding: 10px;
+  margin-right: 10px;
 }
 
 .nav-links a:hover {
@@ -85,4 +87,14 @@ section {
   font-size: 25px;
   margin: 25px 0;
   font-style: italic;
+}
+
+footer {
+  border-top: 2px solid #17252a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: #feffff;
+  padding: 40px;
 }

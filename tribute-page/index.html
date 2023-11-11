@@ -147,17 +147,27 @@
             type="text"
             id="user-comment"
             placeholder="Please leave your thoughts here..."
+            value=""
           />
         </div>
         <div><botton id="post-btn" type="submit"> Post </botton></div>
+        <div class="new-comment"></div>
         <div class="comment-container opened" id="first-comment">
           <div class="comment-card">
             <h4>The First Comment</h4>
-            <p>Chandler Bing is heart</p>
+            <p>
+              I've only just started watching friends since your passing. I'm so
+              sorry.
+            </p>
             <div class="comment-card-footer">
-              <div>Like</div>
-              <div class="vertical-divider"></div>
-              <div class="show-replies">Reply . 2</div>
+              <span> 30/10/2023 </span>
+              <div class="like">
+                <div id="likes-first-comment" value="2">
+                  Like <span id="count">. 2</span>
+                </div>
+                <div class="vertical-divider"></div>
+                <div class="show-replies">Reply . 2</div>
+              </div>
             </div>
           </div>
           <div
@@ -167,11 +177,17 @@
           >
             <div class="comment-card">
               <h4>The First Reply</h4>
-              <p>Chandler Bing is heart</p>
+              <p>
+                I hope a Friends reboot NEVER happens because it won't be the
+                same without Mathew Perry aka Chandler Bing :(
+              </p>
               <div class="comment-card-footer">
-                <div id="comment-like">Like</div>
-                <div class="vertical-divider"></div>
-                <div class="show-replies">Reply . 1</div>
+                <span> 30/10/2023 </span>
+                <div class="like">
+                  <div id="likes" value="">Like</div>
+                  <div class="vertical-divider"></div>
+                  <div class="show-replies">Reply . 1</div>
+                </div>
               </div>
             </div>
             <div
@@ -181,11 +197,14 @@
             >
               <div class="comment-card">
                 <h4>Reply to The First reply</h4>
-                <p>Chandler Bing is heart</p>
+                <p>"Sometimes I wish I was a lesbian..." - Chandler Bing.</p>
                 <div class="comment-card-footer">
-                  <div>Like</div>
-                  <div class="vertical-divider"></div>
-                  <div class="show-replies">Reply</div>
+                  <span> 30/10/2023 </span>
+                  <div class="like">
+                    <div id="likes" value="">Like</div>
+                    <div class="vertical-divider"></div>
+                    <div class="show-replies">Reply</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -197,11 +216,17 @@
           >
             <div class="comment-card">
               <h4>The second reply</h4>
-              <p>Chandler Bing is heart</p>
+              <p>
+                Ok, but can we all agree that Chandler was the absolute best
+                character ever?
+              </p>
               <div class="comment-card-footer">
-                <div>Like</div>
-                <div class="vertical-divider"></div>
-                <div class="show-replies">Reply .1</div>
+                <span> 30/10/2023 </span>
+                <div class="like">
+                  <div id="likes" value="">Like</div>
+                  <div class="vertical-divider"></div>
+                  <div class="show-replies">Reply .1</div>
+                </div>
               </div>
             </div>
             <div
@@ -211,12 +236,33 @@
             >
               <div class="comment-card">
                 <h4>Reply to The second reply</h4>
-                <p>Chandler Bing is heart</p>
+                <p>Yes. Defenitely.</p>
                 <div class="comment-card-footer">
-                  <div>Like</div>
-                  <div class="vertical-divider"></div>
-                  <div class="show-replies">Reply</div>
+                  <span> 30/10/2023 </span>
+                  <div class="like">
+                    <div id="likes" value="">Like</div>
+                    <div class="vertical-divider"></div>
+                    <div class="show-replies">Reply</div>
+                  </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="comment-container opened"
+          dataset="new-comment"
+          id="new-comment-1"
+        >
+          <div class="comment-card">
+            <h4>New Comment</h4>
+            <p>"Nice camouflage. For a minute, I almost didn't see you."</p>
+            <div class="comment-card-footer">
+              <span> 09/11/2023, 16:53:44 </span>
+              <div class="like">
+                <div id="likes" value="">Like</div>
+                <div class="vertical-divider"></div>
+                <div class="show-replies">Reply</div>
               </div>
             </div>
           </div>
