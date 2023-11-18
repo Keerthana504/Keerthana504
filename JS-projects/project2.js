@@ -19,3 +19,13 @@ window.addEventListener("click", function (e) {
     modalContainer.style.display = "none";
   }
 });
+
+// Project 3 Accordian JS
+
+const accordian = document.querySelectorAll(".content-container");
+
+for (i = 0; i < accordian.length; i++) {
+  accordian[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+  });
+}

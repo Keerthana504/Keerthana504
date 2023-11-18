@@ -136,6 +136,12 @@ footer {
   margin-bottom: 100px !important;
 }
 
+#link {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 22em;
+}
+
 #link p {
   text-align: center;
   font-weight: bold;
@@ -255,4 +261,10 @@ footer {
 
 .display-btn {
   display: block !important;
+}
+
+.credits {
+  font-size: 1rem;
+  margin: 0;
+  float: right;
 }
