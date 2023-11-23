@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section></section>
+    <section></section>
+    <section></section>
+    <h1 class="header">Registration Form</h1>
+    <section class="registration-project">
+      <p>Please fill out this form with the required information</p>
+      <form method="post" action="https://register-demo.freecodecamp.org">
+        <fieldset>
+          <label for="first-name"
+            >Enter Your First Name:
+            <input id="first-name" name="first-name" type="text" required
+          /></label>
+          <label for="last-name"
+            >Enter Your Last Name:
+            <input id="last-name" name="last-name" type="text" required
+          /></label>
+          <label for="email"
+            >Enter Your Email:
+            <input id="email" name="email" type="email" required
+          /></label>
+          <label for="new-password"
+            >Create a New Password:
+            <input
+              id="new-password"
+              name="new-password"
+              type="password"
+              pattern="[a-z0-5]{8,}"
+              required
+          /></label>
+        </fieldset>
+        <fieldset>
+          <legend>Account type (required)</legend>
+          <label for="personal-account"
+            ><input
+              id="personal-account"
+              type="radio"
+              name="account-type"
+              class="inline"
+              checked
+            />
+            Personal</label
+          >
+          <label for="business-account"
+            ><input
+              id="business-account"
+              type="radio"
+              name="account-type"
+              class="inline"
+            />
+            Business</label
+          >
+        </fieldset>
+        <fieldset>
+          <label for="profile-picture"
+            >Upload a profile picture:
+            <input id="profile-picture" type="file" name="file"
+          /></label>
+          <label for="age"
+            >Input your age (years):
+            <input id="age" type="number" name="age" min="13" max="120"
+          /></label>
+          <label for="referrer"
+            >How did you hear about us?
+            <select id="referrer" name="referrer">
+              <option value="">(select one)</option>
+              <option value="1">freeCodeCamp News</option>
+              <option value="2">freeCodeCamp YouTube Channel</option>
+              <option value="3">freeCodeCamp Forum</option>
+              <option value="4">Other</option>
+            </select>
+          </label>
+          <label for="bio"
+            >Provide a bio:
+            <textarea
+              id="bio"
+              name="bio"
+              rows="3"
+              cols="30"
+              placeholder="I like coding on the beach..."
+            ></textarea>
+          </label>
+        </fieldset>
+        <label for="terms-and-conditions">
+          <input
+            class="inline"
+            id="terms-and-conditions"
+            type="checkbox"
+            required
+            name="terms-and-conditions"
+          />
+          I accept the
+          <a href="https://www.freecodecamp.org/news/terms-of-service/"
+            >terms and conditions</a
+          >
+        </label>
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+    <h2 class="header">Survey Form</h2>
+    <section class="survey-project">
+      <p id="description">
+        Thank you for taking the time to help us improve our service.
+      </p>
+      <form id="survey-form" method="post" action="">
+        <fieldset class="info">
+          <label id="name-label">Name</label>
+          <input
+            type="text"
+            id="name1"
+            name="name1"
+            required
+            placeholder="Chandler Bing"
+          />
+          <label id="email-label">Email</label>
+          <input
+            type="email"
+            id="email1"
+            name="email1"
+            required
+            placeholder="abc@xyz.com"
+          />
+          <label id="number-label">Age</label>
+          <input
+            type="number"
+            id="number1"
+            name="number1"
+            min="5"
+            max="65"
+            placeholder="65"
+          />
+        </fieldset>
+        <fieldset>
+          <label
+            >Which option best describes your current role?
+            <select id="dropdown">
+              <option>Select one option</option>
+              <option>Student</option>
+              <option>Employee</option>
+              <option>Employeer</option>
+              <option>Self Employed</option>
+              <option>Other</option>
+            </select></label
+          >
+        </fieldset>
+        <fieldset>
+          <label>Would you recommend our services to a friend?</label>
+          <label>
+            <input
+              type="radio"
+              id="definetly"
+              name="recommend"
+              value="definitely"
+            />Definitely
+          </label>
+          <label>
+            <input type="radio" id="mayBe" name="recommend" value="mayBe" />May
+            be</label
+          >
+          <label>
+            <input
+              type="radio"
+              id="notSure"
+              name="recommend"
+              value="notSure"
+            />Not sure</label
+          >
+        </fieldset>
+        <fieldset>
+          <label>What is your favorite service?</label>
+          <label>
+            <input
+              type="checkbox"
+              id="health"
+              value="health"
+              name="health"
+            />Health</label
+          >
+          <label>
+            <input
+              type="checkbox"
+              id="finance"
+              value="finance"
+              name="finance"
+            />Finance</label
+          >
+          <label>
+            <input
+              type="checkbox"
+              id="childcare"
+              value="childcare"
+              name="childcare"
+            />Childcare</label
+          >
+          <label
+            >Additional Comments<textarea
+              id="comments"
+              class="text-box"
+              cols="20"
+              rows="5"
+            ></textarea>
+          </label>
+        </fieldset>
+        <input type="submit" id="submit1" />
+      </form>
+    </section>
+  </body>
+</html>

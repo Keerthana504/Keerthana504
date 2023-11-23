@@ -294,6 +294,7 @@ button {
   font-size: 2rem;
   padding: 10px;
   color: #fff;
+  cursor: pointer;
 }
 
 #play {
@@ -379,6 +380,7 @@ button {
   display: flex;
   justify-content: space-between;
 }
+
 .task li {
   list-style: none;
   flex: 4;

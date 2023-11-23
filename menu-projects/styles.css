@@ -1,13 +1,20 @@
-body {
+#coffee-menu {
   background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
   font-family: sans-serif;
   padding: 20px;
 }
 
-h1 {
+.header {
   font-size: 40px;
-  margin-top: 0;
-  margin-bottom: 15px;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+  background-color: #ffdab9;
+  padding: 20px;
+  border-bottom: 5px solid #b22222;
+  font-family: cursive, sans-serif;
+  color: #000080;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -75,7 +82,7 @@ h2 {
 
 /* FOOTER */
 
-footer {
+.footer {
   font-size: 14px;
 }
 

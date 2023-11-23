@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "lato", sans-serif;
+}
+
+/* ******************************************************* */
+/* ******************************************************* */
+/* Registration Form */
+
+.registration-project {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #f0f8ff;
+  color: #191970;
+  font-family: Tahoma;
+  font-size: 18px;
+}
+
+.registration-project h1,
+.registration-project p {
+  padding-top: 1rem;
+  margin: auto;
+  text-align: center;
+}
+
+.registration-project form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+.registration-project fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+.registration-project fieldset:last-of-type {
+  border-bottom: none;
+}
+
+.registration-project label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.registration-project input,
+.registration-project textarea,
+.registration-project select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2.5em;
+  font-size: medium;
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.registration-project .inline {
+  width: 5%;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+  height: 1rem;
+}
+
+.registration-project input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+  cursor: pointer;
+}
+
+.registration-project input[type="file"] {
+  padding: 2px;
+}
+
+.header {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 32px;
+  background-color: #000000;
+  color: white;
+  border-bottom: 4px solid #f08080;
+  margin: 0px;
+  font-size: 2em;
+}
+
+/* ******************************************************* */
+/* ******************************************************* */
+
+/* Survey Form 1 */
+
+.survey-project {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0px;
+  color: black;
+  background-color: rgb(240, 248, 255);
+}
+
+.survey-project #description {
+  padding: 20px 400px;
+  text-align: center;
+}
+
+.survey-project form {
+  width: 40vw;
+  max-width: 600px;
+  min-width: 300px;
+  align-content: center;
+  margin: 0px auto;
+  padding-bottom: 2rem;
+}
+
+.survey-project fieldset {
+  border: none;
+  padding: 5px;
+  border-bottom: 2px solid #696969;
+}
+
+.survey-project label {
+  padding: 5px 12px 8px 8px;
+  display: block;
+  font-size: 1.1rem;
+}
+
+.survey-project input,
+.survey-project select {
+  margin: 8px auto;
+  padding: 8px;
+  border-radius: 20px;
+  width: 100%;
+  min-width: 55%;
+  max-width: 85%;
+  font-size: 1.1rem;
+  /* background-color: #faf0e6; */
+  transition: 0.3s;
+  box-shadow: 0 0 3px;
+  border: none;
+}
+
+.survey-project input[type="radio"] {
+  width: 10px;
+  min-width: 25px;
+  max-width: 30px;
+  box-shadow: none;
+  height: 1rem;
+}
+
+.survey-project input[type="checkbox"] {
+  width: 10px;
+  min-width: 25px;
+  max-width: 30px;
+  box-shadow: none;
+  height: 1rem;
+  font-size: 0.9rem;
+}
+
+.survey-project input[type="Submit"] {
+  background-color: forestgreen;
+  font-style: inherit;
+  width: 60%;
+  display: block;
+  margin: 1em auto;
+  color: white;
+  cursor: pointer;
+}
+
+.survey-project .text-box {
+  width: 100%;
+  height: 10vh;
+  border-radius: 12px;
+  /* background-color: #faf0e6; */
+  font-size: 1rem;
+  padding: 10px;
+  box-shadow: 0 0 3px;
+  margin-top: 10px;
+}
+
+/* ******************************************************* */
+/* ******************************************************* */
