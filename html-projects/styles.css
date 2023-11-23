@@ -98,7 +98,7 @@ main {
 .quiz-section h2 {
   border-bottom: 4px solid #dfdfe2;
   margin-top: 0px;
-  padding-top: 45px;
+  padding-top: 80px;
 }
 
 .info {
@@ -277,7 +277,7 @@ span[class~="sr-only"] {
 #years {
   display: flex;
   justify-content: flex-end;
-  position: sticky;
+  /* position: sticky; */
   z-index: 999;
   top: 0;
   background: #0a0a23;
@@ -300,7 +300,7 @@ span[class~="sr-only"] {
   border-collapse: collapse;
   border: 0;
   width: 100%;
-  position: relative;
+  /* position: fixed; */
   margin-top: 3rem;
 }
 
