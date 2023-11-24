@@ -8,6 +8,83 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+.no-margin {
+  margin: 0;
+}
+
+.no-margin-top {
+  margin-top: 0;
+}
+
+/* ************************************************************************************************* */
+/* ************************************************************************************************* */
+/* Slider project */
+
+.slider-project {
+  background-color: rgb(240, 190, 240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.slider-project .slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.slider-project .top {
+  display: flex;
+  align-items: center;
+}
+
+.slider-project .arrow {
+  height: 150px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.slider-project .left {
+  transform: rotate(180deg);
+}
+
+.slider-project .image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.slider-project .frame {
+  border: none !important;
+  height: 550px;
+  width: 900px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.slider-p {
+  display: flex;
+  justify-content: flex-end;
+  font-style: italic;
+  gap: 5px;
+  color: blue;
+  background-color: rgb(240, 190, 240);
+  padding: 20px;
+}
+
+.slider-project .bottom {
+  display: flex;
+  gap: 20px;
+}
+.slider-project .button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
 /* ************************************************************************************************* */
 /* ************************************************************************************************* */
 /* Box Model */
@@ -128,13 +205,15 @@ depending on which value is larger. */
 .cat-project {
   box-sizing: border-box;
   background-color: #c9d2fc;
+  height: 80vh;
+  padding: 20px;
 }
 
 .cat-head {
-  position: absolute;
-  right: 50%;
-  left: 0;
-  top: 300%;
+  position: relative;
+  right: 35%;
+  /* left: 0; */
+  top: 90px;
   bottom: 0;
   margin: auto;
   background: linear-gradient(#5e5e5e 85%, #45454f 100%);
