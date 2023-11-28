@@ -72,8 +72,9 @@
 .google-credits {
   color: aliceblue;
   font-size: 1rem;
-  top: 105%;
   position: absolute;
+  top: 555%;
+  font-style: italic;
   right: 3%;
 }
 
@@ -111,9 +112,9 @@
 .credits {
   color: aliceblue;
   font-size: 1rem;
-  top: 95%;
-  position: absolute;
-  right: 3%;
+  top: 85%;
+  position: relative;
+  right: -40%;
 }
 
 .modal {
@@ -312,9 +313,9 @@ button {
 .stopWatch-section .credits {
   color: aliceblue;
   font-size: 1rem;
-  top: 40%;
-  position: relative;
-  right: -25%;
+  top: 215%;
+  position: absolute;
+  right: 3%;
 }
 
 /* Todo list */
@@ -421,9 +422,11 @@ button {
 }
 
 .todo-container .credits {
-  top: 555%;
-  font-style: italic;
-  right: 8%;
+  color: aliceblue;
+  font-size: 1rem;
+  top: 100%;
+  position: absolute;
+  right: 5%;
 }
 
 .todo-container a {
