@@ -1,8 +1,10 @@
-const left = document.querySelector(".left");
-const right = document.querySelector(".right");
+const left = document.querySelector(".lefty");
+const right = document.querySelector(".righty");
 const slider = document.querySelector(".slider");
 const images = document.querySelectorAll(".image");
-const bottom = document.querySelector(".bottom");
+const bottom = document.querySelector(".bottom-sec");
+
+console.log("hey");
 
 let slideNumber = 1;
 const length = images.length;
