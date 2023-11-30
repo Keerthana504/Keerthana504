@@ -482,6 +482,12 @@ body {
   margin-top: -58px;
 }
 
+@media (max-width: 500px) {
+  .ground {
+    height: 25vh;
+  }
+}
+
 /* ************************************************************************************************* */
 /* ************************************************************************************************* */
 /* skyline project */
@@ -506,6 +512,7 @@ body {
   justify-content: space-evenly;
   position: absolute;
   top: 60%;
+  z-index: -1;
 }
 
 .building-wrap {
@@ -789,6 +796,16 @@ body {
       #445 21%,
       #223 100%
     );
+  }
+  .background-buildings,
+  .foreground-buildings {
+    height: 65%;
+  }
+  .ground {
+    height: 23vh;
+  }
+  .back-mountain {
+    top: 110%;
   }
 }
 
