@@ -1,0 +1,201 @@
+<!DOCTYPE >
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <title>Technical Documentation</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main id="main-doc">
+      <section class="main-section" id="javascript">
+        <header>JavaScript</header>
+        <nav id="navbar">
+          <header>JavaScript</header>
+          <a class="nav-link" href="#javascript">JavaScript</a>
+          <a class="nav-link" href="#html">HTML</a>
+          <a class="nav-link" href="#css">CSS</a>
+          <a class="nav-link" href="#react_js">React JS</a>
+          <a class="nav-link" href="#web_development">Web Development</a>
+        </nav>
+
+        <p>
+          JavaScript is a high-level, interpreted programming language that is
+          widely used for creating interactive web pages and web applications.
+        </p>
+        <p>
+          JavaScript is a programming language used to create interactive web
+          pages and dynamic user interfaces.
+        </p>
+        <p>
+          JS is a single threaded language because, Interpreted programming
+          language. Loosely typed language (no types are defined) why? More
+          power to the developer, built for running on browser, dynamic type
+          allocation.
+        </p>
+        <p>
+          it simplifies the programming model and makes it easier to reason
+          about code. It also helps to ensure that there are no conflicts
+          between different threads or processes that are trying to access the
+          same data at the same time.
+        </p>
+        <p>
+          Asynchronous programming in JS is handled by WebAPI in the background,
+          webAPI offers ajax calls, event listeners, setTimeouts and fetch API.
+          Asynchronous programming is achieved by callbacks, async/await, and
+          promises. (uploading files, animations and transitions)
+        </p>
+        <p>
+          Array is the collection/list of elements/items. We use arrays to
+          structure the datatype An array can hold many values under a single
+          name, and you can access the values by referring to an index number.
+        </p>
+        <p>
+          Hoisting is a JavaScript is a default behaviour where variables and
+          function declarations are moved to the top of their scope. The
+          interpreter appears to move the declaration of functions, variables or
+          classes to the top of the scope, prior to execution of the code. It's
+          a special behaviour of the JavaScript interpreter
+        </p>
+        <code>
+          test= "abc"; console.log(test); var test; greet("hello"); function
+          greet(a){ console.log(a); }</code
+        >
+        <p>Temporal dead zone (TDZ)</p>
+        <p>
+          The TDZ starts at the beginning of the variable's enclosing scope and
+          ends when it is declared. Accessing the variable in this TDZ throws a
+          ReferenceError.
+        </p>
+        <p>
+          Functions declared with function key word are only hoisted. Function
+          expressions are not hoisted We cannot create arrow functions with var,
+          we can create arrow functions with var
+        </p>
+        <p>
+          Functions Functions in JavaScript are first-class citizens,
+          first-class objects which means that: 1. Functions can be assigned to
+          variables 2. Functions can be passed as arguments to other functions
+          3. Functions can return other functions
+        </p>
+        <p>Anonymous function</p>
+        <code>setTimeout(function() { alert('hello'); }, 1000); </code>
+        <code
+          >var numbers = [2,4,6]; var numers_half = numbers.map(function(item) {
+          return item / 2; });
+        </code>
+        <code>(function() { alert('foo'); })(); </code>
+        <p>
+          There are four ways a function can be created in JavaScript. They are
+          as follows:
+        </p>
+        <p>
+          1. A function as a statement – can be hoisted/ Function declaration
+        </p>
+        <code
+          >function Add(num1,num2){ let sum = num1+ num2; return sum; } let res
+          = Add(7,8); console.log(res); // 15
+        </code>
+        <p>2. A function as an expression</p>
+        <code
+          >let add = function a(num1,num2){ let sum = num1+ num2; return sum; }
+          let res = add(8,9); console.log(res);// 17
+        </code>
+        <p>3. A function created using the Function constructor</p>
+        <code
+          >var add = Function('num1','num2','return num1+num2'); let res = add
+          (7,8); console.log(res); // 15
+        </code>
+        <p>4. A function as an arrow function</p>
+        <code>const func = () => {}</code>
+        <ul>
+          <li>
+            Arrow functions are another—more concise—way to write function
+            expressions.
+          </li>
+          <li>
+            Use arrow functions as much as possible However, they don’t have
+            their own binding to the this keyword.
+          </li>
+          <li>Parameters should be passed in a small bracket</li>
+          <li>If there is only one parameter, then the bracket is optional</li>
+          <li>
+            If there is no parameter, then it must have a small empty bracket
+          </li>
+          <li>
+            If there is only a single expression in the function body, then
+            using parentheses is optional
+          </li>
+          <li>
+            If there is only a single expression in the function body, then
+            using the return statement is optional
+          </li>
+        </ul>
+        <p>Disadvantages/ shortcomings of using arrow functions :</p>
+        <ul>
+          <li>No arguments object in arrow functions</li>
+          <li>Arrow functions do not create their own this binding</li>
+          <li>Arrow functions cannot be used as constructors</li>
+          <li>Arrow functions cannot be declared</li>
+          <li>Arrow functions cannot be accessed before initialization</li>
+        </ul>
+      </section>
+      <section class="main-section" id="html">
+        <header>HTML</header>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+      </section>
+      <section class="main-section" id="css">
+        <header>CSS</header>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+      </section>
+      <section class="main-section" id="react_js">
+        <header>React JS</header>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+      </section>
+      <section class="main-section" id="web_development">
+        <header>Web Development</header>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+      </section>
+    </main>
+  </body>
+</html>

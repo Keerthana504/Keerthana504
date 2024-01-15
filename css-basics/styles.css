@@ -800,6 +800,7 @@ body {
   .background-buildings,
   .foreground-buildings {
     height: 65%;
+    top: 90%;
   }
   .ground {
     height: 23vh;

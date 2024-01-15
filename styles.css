@@ -3,20 +3,33 @@ It is typically used to define global CSS variables, also known as CSS custom pr
 These custom properties can store values such as colors, font sizes, spacing, 
 :root selector is often placed in the CSS file's beginning */
 :root {
-  --neutral: #3aafa9;
+  --neutral: #4017a0;
   --base-100: #feffff;
-  --neutral-focus: #17252a;
+  --neutral-focus: #e3f75a;
   --accent: ;
 }
 /*  asterisk (*) is a universal selector, which targets every element on the page.  */
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--scroll-padding, 50px);
 }
 
 body {
   font-family: "Noto Serif", serif;
   text-align: center;
   background-color: var(--neutral);
+  color: var(--neutral-focus);
+  /* overflow-x: hidden; */
+}
+
+a {
+  cursor: pointer;
 }
 
 h1,
@@ -33,11 +46,19 @@ h1 {
 }
 /* justify-center" is used to horizontally center elements within their container, 
   while "align-items-center" is used to vertically center elements within their container */
+
+.logo {
+  font-family: cursive;
+  font-size: 2.2rem;
+  padding-left: 12px;
+  color: var(--neutral-focus);
+  text-decoration: none;
+}
+
 .nav-bar {
   display: flex;
-  /* align-items: center; */
-  justify-content: space-between;
-  align-items: end;
+  align-items: center;
+  justify-content: space-around;
   position: fixed;
   top: 0;
   width: 100%;
@@ -50,26 +71,54 @@ h1 {
 .nav-links {
   display: flex;
   list-style: none;
+  justify-content: center;
   /* font-family: serif; */
+}
+
+.nav-links li {
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-links a {
   text-decoration: none;
   color: var(--base-100);
   padding: 10px;
-  margin-right: 10px;
+  margin: 0 12px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: 0.3s ease-in-out;
 }
 
 .nav-links a:hover {
+  font-size: large;
   text-decoration: underline;
 }
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
 /* vh is a relative unit of measurement that represents a percentage of the height of the viewport
   If you want an element to have a height that is a percentage of the viewport's height, you would use vh.
   px is an absolute unit of measurement that represents a single pixel on the screen.
    If you want an element to have an exact, fixed size, regardless of the viewport or screen size */
 section {
   min-height: 100vh;
-  padding: 70px 0;
+  display: flex;
+  align-items: center;
+  margin: 30px;
+  border-bottom: 2px solid var(--neutral-focus);
+}
+
+.no-bottom-border {
+  border-bottom: none;
 }
 
 #welcome-section {
@@ -82,11 +131,164 @@ section {
 #welcome-section h1 {
   margin-top: 30vh;
 }
+
 #welcome-section p {
   color: var(--neutral-focus);
   font-size: 25px;
   margin: 25px 0;
   font-style: italic;
+}
+
+.skillset {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.skill-container {
+  padding: 10px;
+  margin: 5px;
+  min-width: 200px;
+  min-height: 40px;
+  font-size: 1rem;
+  color: black;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  background-color: var(--neutral-focus);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px gray;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.skill-container:hover {
+  color: #06067c;
+  background-color: #adff2fd1;
+  transform: translateY(-3px);
+}
+
+.skillset #part-1,
+.skillset #part-2,
+.skillset #part-3 {
+  display: flex;
+}
+
+.project-tile {
+  height: 21rem;
+  width: 30rem;
+  padding: 3em;
+  margin: 3em;
+  background-color: #adff2fd1;
+}
+
+#project-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#project-container a {
+  text-decoration: none;
+}
+
+.projects img {
+  width: 100%;
+  object-fit: cover;
+  border: 5px solid #555;
+}
+
+.quotes-sec {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding: 20px 135px;
+}
+
+.quotes-container {
+  display: flex;
+  gap: 30px;
+  overflow: hidden;
+}
+
+.quotes-tile {
+  display: flex;
+  justify-content: center;
+  min-width: 900px;
+  margin: 20px;
+  align-items: center;
+}
+
+.quotes-sec img {
+  cursor: pointer;
+}
+
+.quotes-tile .celeb-photo {
+  height: 195px;
+  width: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.frame {
+  min-height: 65vh !important;
+  min-width: 100%;
+  flex: 1;
+  margin: 0 40px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.frame #name {
+  color: rgb(47, 5, 86);
+  font-family: serif;
+  font-style: italic;
+  font-size: 20px;
+  padding: 0 !important;
+}
+
+.frame p {
+  color: black;
+  font-family: serif;
+  font-style: italic;
+  font-size: 20px;
+  padding: 20px 50px;
+  font-weight: bold;
+}
+
+.container-1 {
+  background: url(./Images/BG-Book3.jpg) no-repeat center/cover;
+}
+
+.container-2 {
+  background: url(./Images/BG-Colors.jpg) no-repeat center/cover;
+}
+
+.container-3 {
+  background: url(./Images/BG-Cosmetics2.jpg) no-repeat center/cover;
+}
+
+.container-4 {
+  background: url(./Images/BG-Cricket5.jpg) no-repeat center/cover;
+}
+
+.container-5 {
+  background: url(./Images/BG-Letters1.jpg) no-repeat center/cover;
+}
+
+.container-6 {
+  background: url(./Images/BG-Badminton4.jpg) no-repeat center/cover;
+}
+
+.container-7 {
+  background: url(./Images/BG-Leader.jpg) no-repeat center/cover;
 }
 
 footer {
@@ -96,5 +298,15 @@ footer {
   align-items: center;
   gap: 20px;
   color: #feffff;
-  padding: 40px;
+  padding: 30px;
+  background-color: black;
+}
+
+footer nav {
+  display: grid;
+  gap: 20px;
+}
+
+footer .copy-right {
+  font-size: 12px;
 }
