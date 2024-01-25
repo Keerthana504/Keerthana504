@@ -11,7 +11,7 @@
   align-items: center;
   height: 100vh;
   text-align: center;
-  background: url(../Images/Library.jpg) no-repeat center/cover;
+  background: url(../images/Library.jpg) no-repeat center/cover;
 }
 
 .container {
@@ -81,7 +81,7 @@
 /* Modal styles */
 
 .modal-section {
-  background: url(../Images/Forest.png) no-repeat center center/cover;
+  background: url(../images/Forest.png) no-repeat center center/cover;
   height: 100vh;
   position: relative;
   text-align: center;
@@ -173,7 +173,7 @@
 /* Accordian Styles */
 
 .accordian-section {
-  background: url(../Images/question.jpg) no-repeat center center/cover;
+  background: url(../images/question.jpg) no-repeat center center/cover;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -253,7 +253,7 @@
 
 .stopWatch-section {
   height: 100vh;
-  background: url(../Images/time.jpg) no-repeat center center/cover;
+  background: url(../images/time.jpg) no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
