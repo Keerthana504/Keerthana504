@@ -179,6 +179,19 @@ section {
   display: flex;
 }
 
+#about article {
+  padding: 0 20%;
+}
+
+#about article p {
+  padding: 10px;
+  text-align: left;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
 .project-tile {
   height: 21rem;
   width: 30rem;
