@@ -4,44 +4,43 @@ Welcome to my portfolio project! This repository showcases my skills and experie
 
 ## Project Overview
 
+A personal project that I undertook with a passion for Front End Development. 
+The projects showcased have been built with perseverance, days of research went into choosing the right functionalities, focus, and utilities, and every single detail on the page has a story to tell,
+I finally succeeded in making it work efficiently. A personal project that I undertook with a passion for Front End Development. The projects showcased have been built with perseverance, days of research went into choosing the right functionalities, focus, and utilities, and every single detail on the page has a story to tell, I finally succeeded in making it work efficiently.
+
 This project serves as my portfolio, where I demonstrate my proficiency in various frontend technologies, design principles, and development best practices.
 It includes a collection of projects that highlight my expertise in web development.
 
-## Table of Contents
-
-- [Technologies Used](#technologies-used)
-- [Project Showcase](#project-showcase)
-- [Setup and Installation](#setup-and-installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript
-- React.js
 
 ## Project Showcase
 
-### Project 1: [Project Name]
+### Project 1: Beyond Eats 
 
-- Description: Briefly describe the project, its goals, and your role.
-- Live Demo: [Link to the live project]
-- Repository: [Link to the project's repository]
+- Description: Beyond Eats is a food delivery website built using the SWIGGY API (Real-time API) that SWIGGY Food Gaint (India) uses for its website.
+I have created a clone of the SWIGGY website by developing the components from scratch. The website works dynamically by displaying the lip-smacking signature delicacies of restaurants. 
+I maintained the same look and feel and also added my designs, functionalities, and features for uniqueness.
+- Live Demo: https://keerthana504.github.io/React/
+- Repository: https://github.com/Keerthana504/React
 
-[Repeat this section for each project in your portfolio]
 
-### Project 2: [Project Name]
+### Project 2: Beyond Stories
 
-[Repeat for each project]
+- Description: Beyond Stories is an online bookstore, the website is inspired by a few online bookstores.
+Layouts have been created with responsive design in mind, colors have been chosen according to the accessibility and color contrast standards. 
+All the UI Design patterns implemented here are in regards to ease of use, finally, I was able to provide my bookstore with a colorful, bold, and modern website.
+- Live Demo: https://keerthana504.github.io/project-book-store/
+- Repository: https://github.com/Keerthana504/project-book-store
 
 ## Setup and Installation
 
-1. Clone this repository: `git clone https://github.com/yourusername/portfolio.git`
-2. Change directory to the project: `cd portfolio`
-3. [Additional setup and installation instructions, if applicable]
+1. Clone this repository: `git clone https://github.com/Keerthana504/Portfolio.git`
+2. Change the directory to the project: `cd portfolio`
 
 ## Usage
 
@@ -57,14 +56,10 @@ If you'd like to contribute to my portfolio or report issues, please follow thes
 4. Push to the branch: `git push origin feature-name`
 5. Submit a pull request
 
-## License
-
-This project is licensed under the [License Name] - see the [LICENSE](LICENSE) file for details.
-
 ## Contact
 
 - Email: keerthana5.y@gmail.com
-- Portfolio: 
+- Portfolio: https://keerthana504.github.io/Portfolio/
 - LinkedIn: https://www.linkedin.com/in/keerthana-ayelligadala
 
 Thank you for visiting my portfolio project! 
