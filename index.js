@@ -1,3 +1,5 @@
+// skills scroll infinite
+
 const skillSet = [
   "HTML5",
   "CSS3",
@@ -9,6 +11,13 @@ const skillSet = [
   "Tailwind",
   "responsive design",
   "accesibility",
+  "page performance",
+  "optimisation",
+  "testing",
+  "SEO",
+  "best practices",
+  "react-hooks",
+  "react-router",
   "SDLC",
   "Analysis",
   "Design",
@@ -43,42 +52,78 @@ const skillSet = [
 
 document.addEventListener("DOMContentLoaded", function () {
   // Function to create and append buttons
-  console.log("js");
-  const skillContainer = document.querySelector(".skillset");
+  // const skillContainer = document.querySelector(".skillset");
 
-  const part1 = document.createElement("div");
-  part1.setAttribute("id", "part-1");
-  const part2 = document.createElement("div");
-  part2.setAttribute("id", "part-2");
-  const part3 = document.createElement("div");
-  part3.setAttribute("id", "part-3");
+  // const part1 = document.createElement("div");
+  // part1.setAttribute("id", "part-1");
+  // const part2 = document.createElement("div");
+  // part2.setAttribute("id", "part-2");
+  // const part3 = document.createElement("div");
+  // part3.setAttribute("id", "part-3");
 
   let count = 0;
-  //Assign different attributes to the element.
-  skillSet.forEach((item) => {
-    count++;
-    const skill = document.createElement("div");
-    skill.setAttribute("class", "skill-container");
-    skill.innerHTML = item;
-    let child;
-    if (count < 16) {
-      part1.appendChild(skill);
-      skillContainer.appendChild(part1);
-    } else if (count < 30) {
-      part2.appendChild(skill);
-      skillContainer.appendChild(part2);
-    } else {
-      part3.appendChild(skill);
-      skillContainer.appendChild(part3);
-    }
-  });
 });
+
+// section smooth scrolling
 
 const navigationHeight = document.querySelector(".nav-bar").offsetHeight;
 
-console.log(document.documentElement);
+// console.log(document.documentElement);
 
 document.documentElement.style.setProperty(
   "--scroll-padding",
   navigationHeight + "px"
 );
+
+// Image caurosel
+const moveLeft = document.querySelector(".arrow-left");
+const moveRight = document.querySelector(".arrow-right");
+const frame = document.querySelector(".slider");
+const slideShowImages = document.querySelectorAll(".quotes-tile");
+const images = document.querySelectorAll(".celeb-photo");
+
+let move = 1;
+let length = images.length;
+
+const nextImageDelay = 7000;
+let currentImageCount = 0;
+
+const autoSlider = () => {
+  currentImageCount = (currentImageCount + 1) % slideShowImages.length;
+  frame.style.transform = `translateX(-${currentImageCount * 940}px)`;
+  console.log(currentImageCount, "here", move);
+};
+
+setInterval(autoSlider, nextImageDelay);
+
+const firstQuote = () => {
+  move = 1;
+  console.log("first", move);
+  frame.style.transform = `translateX(0px)`;
+};
+
+const lastQuote = () => {
+  frame.style.transform = `translateX(-${(length - 1) * 940}px)`;
+  move = length;
+};
+
+const nextQuote = () => {
+  console.log("next", move);
+  frame.style.transform = `translateX(-${move * 940}px)`;
+  move++;
+};
+
+const prevQuote = () => {
+  frame.style.transform = `translateX(-${(move - 2) * 940}px)`;
+  move--;
+};
+
+moveRight.addEventListener("click", () => {
+  console.log(move);
+  move >= length ? firstQuote() : nextQuote();
+});
+
+moveLeft.addEventListener("click", () => {
+  console.log(move);
+  move <= 1 ? lastQuote() : prevQuote();
+});

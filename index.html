@@ -12,6 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Poppins:wght@500&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -30,19 +34,71 @@
     </header>
     <main>
       <section id="welcome-section">
-        <h1>Hello, I'm Keerthana.</h1>
-        <p>A Frontend Developer</p>
-        <div class="skillset"></div>
+        <!-- Left column -->
+        <div class="left-col">
+          <div class="line-bar"></div>
+          <div class="line-1"></div>
+        </div>
+        <!-- Right Column -->
+        <div class="right-col">
+          <div class="line-bar-right"><span></span></div>
+          <div class="skills" data-tooltip="Hover on the special characters">
+            <span>API</span>
+            <span class="sign">/</span>
+            <span>JavaScript</span>
+            <span class="sign">%</span>
+
+            <span class="sign">{</span>
+            <span>HTML5</span>
+            <span>CSS3</span>
+
+            <span>Design</span>
+            <span class="sign">></span>
+            <span class="sign">(</span>
+            <span>ES6</span>
+            <span class="sign">#</span>
+            <span class="sign">=</span>
+            <span>React</span>
+            <span class="sign">|</span>
+            <span>Redux</span>
+
+            <span>SQL</span>
+            <span class="sign">}</span>
+            <span>Responsive Design</span>
+
+            <span>NodeJS</span>
+            <span class="sign">)</span>
+            <span>Bootstrap</span>
+            <span class="sign">+</span>
+            <span class="sign"><</span>
+            <span>AJAX</span>
+            <span class="sign">*</span>
+          </div>
+          <div class="bottom-bar"><span></span></div>
+          <h4>Modern Website</h4>
+        </div>
+
+        <div class="hero">
+          <h1><span class="auto-type"> </span></h1>
+          <p>
+            <span>K</span>eerthana is a <span>F</span>rontend
+            <span>D</span>eveloper and <br />an aspiring <span>W</span>eb
+            <span>D</span>esigner
+          </p>
+          <button class="btn"><a href="#contact">Contact Me </a></button>
+        </div>
+
+        <!-- <div class="skillset"></div> -->
       </section>
       <section id="about">
         <article>
-          <p>Hey.. Hi!</p>
+          <p>Hey.. <span> H</span>i!</p>
 
           <p>Thanks for visiting my site.</p>
 
           <p>
             I’m Keerthana, in life I play many roles. At the office, I’m called
-            Frontend Developer.
+            <span>F</span>rontend <span>D</span>eveloper.
           </p>
 
           <p>
@@ -72,235 +128,377 @@
             environments, and interacting with people.
           </p>
           <p>
-            I would love to collaborate with you and create Responsive Modern
-            Websites.
+            I would love to collaborate with you and create
+            <span>R</span>esponsive <span>M</span>odern <span>W</span>ebsites.
           </p>
         </article>
-      </section>
-      <section id="projects" class="projects no-bottom-border">
-        <!-- shortcut a.project-title*6>img+p>span*2 -->
-        <section id="project-container">
-          <a
-            href="https://keerthana504.github.io/React/"
-            class="project-tile"
-            target="_blank"
-          >
-            <img src="./images/BeyondEats.png" alt="BeyondEats" />
-            <h3>Beyond Eats</h3>
-            <p>Beyond Eats is a food delivery website</p>
-          </a>
-          <a
-            href="https://karthikkumardevops9.github.io/Portfolio/"
-            class="project-tile"
-            target="_blank"
-          >
-            <img
-              src="./images/Karthik-portfolio.png"
-              alt="karthikkumardevops9"
-            />
-            <h3>Freelance - Portfolio</h3>
-            <p>
-              Helped a client have his own portfolio created with my expertise
-            </p>
-          </a>
-          <a
-            href="https://keerthana504.github.io/project-book-store/"
-            class="project-tile"
-            target="_blank"
-          >
-            <img src="./images/Beyond-Stories.png" alt="Book-app" />
-            <h3>Beyond Stories</h3>
-            <p>A one stop store for all kinds of books for all ages</p>
-          </a>
-          <a
-            href="./tribute-page/index.html"
-            class="project-tile"
-            target="_blank"
-          >
-            <img src="./images/TributePage.png" alt="Tribute" />
-            <h3>Tribute Page</h3>
-            <p>A memory page of my favourite character in my portfolio !!</p>
-          </a>
-          <a
-            href="./email-development/index.html"
-            class="project-tile"
-            target="_blank"
-          >
-            <img src="./images/email.png" alt="HTML" />
-            <h3>Email Development</h3>
-            <p></p>
-          </a>
-
-          <a
-            href="./JS-projects/index.html"
-            class="project-tile"
-            target="_blank"
-          >
-            <img src="./images/JS.png" alt="JS" />
-            <h3>JavaScript</h3>
-            <p>Some widgets with the show stopper - JavaScript</p>
-          </a>
-        </section>
       </section>
       <section class="quotes-sec">
         <img
           width="80"
           height="80"
-          src="https://img.icons8.com/color/48/000000/double-left--v1.png"
+          src="./images/left-arrow.png"
           alt="double-left--v1"
+          class="arrow-left"
         />
         <div class="quotes-container">
-          <section class="quotes-tile no-bottom-border">
-            <div class="container-1 frame">
-              <div>
-                <img
-                  src="./images/Celebrities/IndraNooyi.jpg"
-                  alt=""
-                  class="celeb-photo"
-                />
-                <p id="name">
-                  Indra Nooyi <br />
-                  Former CEO of PepsiCo
-                </p>
-              </div>
+          <div class="slider">
+            <section class="quotes-tile no-bottom-border">
+              <div class="container-1 frame">
+                <div>
+                  <img
+                    src="./images/Celebrities/IndraNooyi.jpg"
+                    alt=""
+                    class="celeb-photo"
+                  />
+                  <p id="name">
+                    Indra Nooyi <br />
+                    Former CEO of PepsiCo
+                  </p>
+                </div>
 
-              <p>
-                Leadership is hard to define and good leadership even harder.
-                But if you can get people to follow you to the ends of the
-                earth, you are a great leader.
-              </p>
-            </div>
-          </section>
-          <section class="quotes-tile no-bottom-border">
-            <div class="container-2 frame">
-              <div>
-                <img
-                  src="./images/Celebrities/SundarPichai.jpg"
-                  alt=""
-                  class="celeb-photo"
-                />
-                <p id="name">
-                  Sundar Pichai<br />
-                  CEO Google & Alphabet Inc.
+                <p>
+                  Leadership is hard to define and good leadership even harder.
+                  But if you can get people to follow you to the ends of the
+                  earth, you are a great leader.
                 </p>
               </div>
-              <p>
-                A person who is happy is not because everything is right in his
-                life, he is happy because his attitude towards everything in his
-                life is right.
-              </p>
-            </div>
-          </section>
-          <section class="quotes-tile no-bottom-border">
-            <div class="container-3 frame">
-              <div>
-                <img
-                  src="./images/Celebrities/VineetaSingh.jpg"
-                  alt=""
-                  class="celeb-photo"
-                />
-                <p id="name">
-                  Vineeta Singh <br /><span
-                    >CEO & Co-founder of Sugar Cosmetics</span
-                  >
+            </section>
+            <section class="quotes-tile no-bottom-border">
+              <div class="container-2 frame">
+                <div>
+                  <img
+                    src="./images/Celebrities/SundarPichai.jpg"
+                    alt=""
+                    class="celeb-photo"
+                  />
+                  <p id="name">
+                    Sundar Pichai<br />
+                    CEO Google & Alphabet Inc.
+                  </p>
+                </div>
+                <p>
+                  A person who is happy is not because everything is right in
+                  his life, he is happy because his attitude towards everything
+                  in his life is right.
                 </p>
               </div>
-              <p>
-                My definition of success is how I have the freedom and ability
-                to do anything I want, without the fear of failure
-              </p>
-            </div>
-          </section>
-          <section class="quotes-tile no-bottom-border">
-            <div class="container-4 frame">
-              <div>
-                <img
-                  src="./images/Celebrities/MSDhoni.png"
-                  alt=""
-                  class="celeb-photo"
-                />
-                <p id="name">
-                  MS Dhoni <br /><span>Former Indian Cricket Caption</span>
+            </section>
+            <section class="quotes-tile no-bottom-border">
+              <div class="container-3 frame">
+                <div>
+                  <img
+                    src="./images/Celebrities/VineetaSingh.jpg"
+                    alt=""
+                    class="celeb-photo"
+                  />
+                  <p id="name">
+                    Vineeta Singh <br /><span
+                      >CEO & Co-founder of Sugar Cosmetics</span
+                    >
+                  </p>
+                </div>
+                <p>
+                  My definition of success is how I have the freedom and ability
+                  to do anything I want, without the fear of failure
                 </p>
               </div>
-              <p>
-                Nobody has seen form. It’s a state of mind where you are
-                confident and you think very positively and everything you think
-                about, It’s about how you treat the mind.
-              </p>
-            </div>
-          </section>
-          <section class="quotes-tile no-bottom-border">
-            <div class="container-5 frame">
-              <div>
-                <img
-                  src="./images/Celebrities/SteveJobs.jpg"
-                  alt=""
-                  class="celeb-photo"
-                />
-                <p id="name">
-                  Steve Jobs <br /><span>Founder of Apple Inc</span>
+            </section>
+            <section class="quotes-tile no-bottom-border">
+              <div class="container-4 frame">
+                <div>
+                  <img
+                    src="./images/Celebrities/MSDhoni.png"
+                    alt=""
+                    class="celeb-photo"
+                  />
+                  <p id="name">
+                    MS Dhoni <br /><span>Former Indian Cricket Caption</span>
+                  </p>
+                </div>
+                <p>
+                  Nobody has seen form. It’s a state of mind where you are
+                  confident and you think very positively and everything you
+                  think about, It’s about how you treat the mind.
                 </p>
               </div>
-              <p>
-                You can’t connect the dots looking forward; you can only connect
-                them looking backwards. So you have to trust that the dots will
-                somehow connect in your future.
-              </p>
-            </div>
-          </section>
-          <section class="quotes-tile no-bottom-border">
-            <div class="container-6 frame">
-              <div>
-                <img
-                  src="./images/Celebrities/PVSindhu.jpg"
-                  alt=""
-                  class="celeb-photo"
-                />
-                <p id="name">P.V. Sindhu <br />Indian Badmintion Player</p>
-              </div>
-              <p>
-                The greatest asset is a strong mind. If I know someone is
-                training harder than I am, I have no excuses.
-              </p>
-            </div>
-          </section>
-          <section class="quotes-tile no-bottom-border">
-            <div class="container-7 frame">
-              <div>
-                <img
-                  src="./images/Celebrities/PM-Modi.png"
-                  alt=""
-                  class="celeb-photo"
-                />
-                <p id="name">
-                  Narender Modi <br />
-                  PM of India
+            </section>
+            <section class="quotes-tile no-bottom-border">
+              <div class="container-5 frame">
+                <div>
+                  <img
+                    src="./images/Celebrities/SteveJobs.jpg"
+                    alt=""
+                    class="celeb-photo"
+                  />
+                  <p id="name">
+                    Steve Jobs <br /><span>Founder of Apple Inc</span>
+                  </p>
+                </div>
+                <p>
+                  You can’t connect the dots looking forward; you can only
+                  connect them looking backwards. So you have to trust that the
+                  dots will somehow connect in your future.
                 </p>
               </div>
-              <p>
-                Unless and until you inspire the people, you will not get
-                results. Imposition will never give you the results. Inspiration
-                will always give you the results
-              </p>
-            </div>
-          </section>
+            </section>
+            <section class="quotes-tile no-bottom-border">
+              <div class="container-6 frame">
+                <div>
+                  <img
+                    src="./images/Celebrities/PVSindhu.jpg"
+                    alt=""
+                    class="celeb-photo"
+                  />
+                  <p id="name">P.V. Sindhu <br />Indian Badmintion Player</p>
+                </div>
+                <p>
+                  The greatest asset is a strong mind. If I know someone is
+                  training harder than I am, I have no excuses.
+                </p>
+              </div>
+            </section>
+            <section class="quotes-tile no-bottom-border">
+              <div class="container-7 frame">
+                <div>
+                  <img
+                    src="./images/Celebrities/PM-Modi.png"
+                    alt=""
+                    class="celeb-photo"
+                  />
+                  <p id="name">
+                    Narender Modi <br />
+                    PM of India
+                  </p>
+                </div>
+                <p>
+                  Unless and until you inspire the people, you will not get
+                  results. Imposition will never give you the results.
+                  Inspiration will always give you the results
+                </p>
+              </div>
+            </section>
+          </div>
         </div>
+
         <img
           width="80"
           height="80"
-          src="https://img.icons8.com/color/48/000000/double-right--v1.png"
+          src="./images/right-arrow.png"
           alt="double-right--v1"
+          class="arrow-right"
         />
       </section>
-      <p>
-        Image by
-        <a
-          href="https://www.freepik.com/free-photo/top-view-alphabet-letters-frame_10703217.htm#query=letters%20background&position=23&from_view=search&track=ais&uuid=8c486145-0cdd-43c0-a822-d90d56dcfd7a"
-          >Freepik</a
+      <span class="credits">
+        Images by
+        <a href="https://www.freepik.com" target="_blank">Freepik</a></span
+      >
+      <section id="projects" class="no-bottom-border">
+        <!-- shortcut a.project-title*6>img+p>span*2 -->
+        <section id="project-container">
+          <div class="bg-1">
+            <h3>Beyond Eats</h3>
+            <div class="project-1">
+              <img
+                src="./images/BeyondEats.png"
+                alt="BeyondEats"
+                class="img-1"
+              />
+              <div>
+                <p>
+                  Beyond Eats is a food delivery website built using Real-time
+                  APIs. I have created a clone of the SWIGGY website by
+                  developing the components from scratch.
+                </p>
+                <p>
+                  The website works dynamically by displaying the lip-smacking
+                  signature delicacies of restaurants.
+                </p>
+                <p>
+                  Tools : React JS, React Hooks, React Router, Redux, HTML5,
+                  CSS3, Git
+                </p>
+                <div class="links">
+                  <a
+                    href="https://keerthana504.github.io/React/"
+                    target="_blank"
+                    >Website Link
+                    <i class="fa-solid fa-paper-plane"></i>
+                  </a>
+                  <a
+                    href="https://github.com/Keerthana504/React"
+                    target="_blank"
+                  >
+                    Github Link
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+                <!-- <p>Click above to view website</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="bg-2">
+            <h3>Freelance - Portfolio</h3>
+            <div class="project-2">
+              <div>
+                <p>
+                  Portfolio is an identity of an individual to showcase the
+                  skills and experience. Most definitely for anyone working in
+                  the IT industry to stand ahead of the competition.
+                </p>
+                <p>
+                  This freelance project is one such portfolio developed for a
+                  non-technical background client.
+                </p>
+                <p>Tools : HTML5, CSS3, JavsScript, Git</p>
+
+                <div class="links">
+                  <a
+                    href="https://karthikkumardevops9.github.io/Portfolio/"
+                    target="_blank"
+                  >
+                    Website Link
+                    <i class="fa-solid fa-paper-plane"></i>
+                  </a>
+                  <a
+                    href="https://github.com/Keerthana504/Portfolio-KarthikKumar"
+                    target="_blank"
+                  >
+                    Github Link
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+                <!-- <p>Click above to view website</p> -->
+              </div>
+              <img
+                src="./images/Karthik-portfolio.png"
+                alt="karthikkumardevops9"
+                class="img-2"
+              />
+            </div>
+          </div>
+          <div class="bg-1">
+            <h3>Beyond Stories</h3>
+            <div class="project-1">
+              <img
+                src="./images/BeyondStories.png"
+                alt="Book-app"
+                class="img-1"
+              />
+              <div>
+                <p>
+                  Beyond Stories is a one stop store for all kinds of books for
+                  all ages.
+                </p>
+                <p>
+                  Layouts have been created with responsive design in mind,
+                  colors have been chosen according to the accessibility and
+                  color contrast standards. All the UI Design patterns
+                  implemented here are in regards to ease of use
+                </p>
+
+                <p>Tools : React JS, React Hooks, HTML5, CSS3, Git</p>
+
+                <div class="links">
+                  <a
+                    href="https://keerthana504.github.io/project-book-store/"
+                    target="_blank"
+                  >
+                    Website Link
+                    <i class="fa-solid fa-paper-plane"></i>
+                  </a>
+                  <a
+                    href="https://github.com/Keerthana504/project-book-store"
+                    target="_blank"
+                  >
+                    Github Link
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+                <!-- <p>Click above to view website</p> -->
+              </div>
+            </div>
+          </div>
+
+          <button class="show-more-btn">
+            Show More <i class="fa-solid fa-angle-down"></i>
+          </button>
+          <div class="projects-show-more">
+            <div class="more-project">
+              <img src="./images/TributePage.png" alt="Tribute" />
+              <h3>Tribute Page</h3>
+              <p>A memory page of my favourite character in my portfolio !!</p>
+              <button>
+                <a href="./tribute-page/index.html" target="_blank"></a>
+              </button>
+            </div>
+            <div class="more-project">
+              <img src="./images/email.png" alt="HTML" />
+              <h3>Email Development</h3>
+              <p></p>
+              <a href="./email-development/index.html" target="_blank"> </a>
+            </div>
+            <div class="more-project">
+              <img src="./images/JS.png" alt="JS" />
+              <h3>JavaScript</h3>
+              <p>Some widgets with the show stopper - JavaScript</p>
+              <a href="./JS-projects/index.html" target="_blank"> </a>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section id="contact" class="contact-container no-bottom-border">
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          class="contact-left"
         >
-      </p>
-      <section id="contact" class="no-bottom-border"></section>
+          <div class="contact-left-title">
+            <h2>Get in touch</h2>
+            <hr />
+          </div>
+          <input
+            type="hidden"
+            name="access_key"
+            value="1a852b85-1e3b-4dc1-b30d-6043895c1398"
+          />
+
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            class="contact-inputs"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            class="contact-inputs"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            class="contact-inputs"
+            required
+          ></textarea>
+          <button type="submit">
+            Submit <img src="./images/right-arrow.png" />
+          </button>
+        </form>
+        <div class="contact-right">
+          <p>
+            <span>K</span>eerthana is a <span>F</span>rontend
+            <span>D</span>eveloper<br />
+            and an aspiring <span>W</span>eb <span>D</span>esigner
+          </p>
+          <a href="./images/Keerthana-Ayelligadala-Resume.pdf" download>
+            Download Resume</a
+          >
+        </div>
+      </section>
     </main>
     <footer>
       <nav>
@@ -328,7 +526,7 @@
                 height="75px"
               >
                 <g
-                  fill="#21f3f0"
+                  fill="#e3f75a"
                   fill-rule="nonzero"
                   stroke="none"
                   stroke-width="1"
@@ -364,15 +562,15 @@
                 height="55px"
                 baseProfile="basic"
               >
-                <circle cx="14" cy="14" r="2" fill="#21f3f0"></circle>
+                <circle cx="14" cy="14" r="2" fill="#e3f75a"></circle>
                 <path
-                  fill="#21f3f0"
+                  fill="#e3f75a"
                   d="M37.718,47H12.282C7.164,47,3,42.836,3,37.718V12.282C3,7.164,7.164,3,12.282,3h25.436	C42.836,3,47,7.164,47,12.282v25.436C47,42.836,42.836,47,37.718,47z M12.282,7C9.369,7,7,9.369,7,12.282v25.436	C7,40.631,9.369,43,12.282,43h25.436C40.631,43,43,40.631,43,37.718V12.282C43,9.369,40.631,7,37.718,7H12.282z"
                 ></path>
-                <rect width="3" height="19" x="12" y="19" fill="#21f3f0"></rect>
-                <rect width="3" height="19" x="21" y="19" fill="#21f3f0"></rect>
+                <rect width="3" height="19" x="12" y="19" fill="#e3f75a"></rect>
+                <rect width="3" height="19" x="21" y="19" fill="#e3f75a"></rect>
                 <path
-                  fill="#21f3f0"
+                  fill="#e3f75a"
                   d="M38,38h-4V27.5c0-1.056-0.252-4.5-3.5-4.5c-2.468,0-5.5,3.032-5.5,5.5V38h-4v-9.5	c0-4.706,4.794-9.5,9.5-9.5c4.416,0,7.5,3.495,7.5,8.5V38z"
                 ></path></svg
             ></a>
@@ -384,5 +582,23 @@
       </nav>
     </footer>
     <script src="./index.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: [
+          "Hello",
+          "Namaste",
+          "Namaskaram",
+          "Bonjour",
+          "Hola",
+          "Asalaam alaikum",
+          "Olá",
+        ],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true,
+      });
+    </script>
   </body>
 </html>
