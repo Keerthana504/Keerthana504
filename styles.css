@@ -506,6 +506,7 @@ article .btn {
   height: max-content;
   font-size: 1.2rem;
   flex-wrap: wrap;
+  padding: 20px;
 }
 
 .project-1 {
@@ -622,7 +623,7 @@ article .btn {
   display: flex;
   gap: 30px;
   align-items: center;
-  padding: 100px;
+  padding: 10px 100px;
 }
 
 .quotes-container {
