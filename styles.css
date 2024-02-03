@@ -372,7 +372,7 @@ section {
   bottom: 0px;
 }
 
-.right-col h4 {
+.right-col h2 {
   position: absolute;
   top: 50%;
   right: 26%;
@@ -544,6 +544,8 @@ article .btn {
 .project-2 .img-2,
 .img-1 {
   width: 50%;
+  max-width: 100%;
+  height: auto;
   object-fit: cover;
   border-radius: 20px;
   flex-basis: 50%;
@@ -645,6 +647,9 @@ article .btn {
   cursor: pointer;
   padding: 20px;
   color: #4017a0;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .quotes-tile .celeb-photo {
@@ -738,7 +743,7 @@ article .btn {
   gap: 20px;
 }
 
-.contact-left-title h4 {
+.contact-left-title p {
   font-weight: 700;
   font-size: 2rem;
   margin-bottom: 5px;
@@ -799,6 +804,8 @@ article .btn {
 .contact-left button img {
   width: 20px;
   height: 20px;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 .contact-right {
@@ -824,6 +831,7 @@ article .btn {
 .contact-right p {
   margin-bottom: 40px;
   color: #ffffff;
+  line-height: 40px;
 }
 
 .contact-right span {
@@ -859,6 +867,10 @@ footer .copy-right li {
   .logo,
   .contact-right {
     font-size: 1.4rem;
+    font-family: fantasy;
+  }
+  #about article p {
+    font-size: 1rem;
   }
 }
 
@@ -877,7 +889,7 @@ footer .copy-right li {
   .skills {
     display: none !important;
   }
-  .right-col h4 {
+  .right-col h2 {
     opacity: 0;
   }
   /* .left-col,
@@ -907,6 +919,7 @@ footer .copy-right li {
     flex-basis: unset;
     width: 100%;
     padding: 10px;
+    object-fit: cover;
     max-width: 100%;
   }
 
@@ -934,7 +947,7 @@ footer .copy-right li {
   .skills {
     display: none !important;
   }
-  .right-col h4 {
+  .right-col h2 {
     opacity: 0;
   }
 }
