@@ -914,3 +914,16 @@ footer .copy-right li {
     height: max-content;
   }
 }
+
+@media (max-width: 1024px) {
+  .quotes-sec,
+  .credits {
+    display: none;
+  }
+  .skills {
+    display: none !important;
+  }
+  .right-col h4 {
+    opacity: 0;
+  }
+}
