@@ -1,4 +1,4 @@
-// skills scroll infinite
+//     ******************* skills scroll infinite  **************************
 
 const skillSet = [
   "HTML5",
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let count = 0;
 });
 
-// section smooth scrolling
+//    *******************  section smooth scrolling   **********************
 
 const navigationHeight = document.querySelector(".nav-bar").offsetHeight;
 
@@ -75,7 +75,8 @@ document.documentElement.style.setProperty(
   navigationHeight + "px"
 );
 
-// Image caurosel
+//     *******************  Image caurosel  **************************
+
 const moveLeft = document.querySelector(".arrow-left");
 const moveRight = document.querySelector(".arrow-right");
 const frame = document.querySelector(".slider");
@@ -126,4 +127,27 @@ moveRight.addEventListener("click", () => {
 moveLeft.addEventListener("click", () => {
   console.log(move);
   move <= 1 ? lastQuote() : prevQuote();
+});
+
+// ************************ Responsive Navigation ******************
+
+const showSidebar = () => {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.style.display = "flex";
+};
+
+const hideSidebar = () => {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.style.display = "none";
+};
+
+const sidebar = document.querySelector(".sidebar");
+const menuButton = document.querySelector(".menu-button");
+
+menuButton.addEventListener("click", () => {
+  sidebar.style.display = "flex";
+});
+
+sidebar.addEventListener("click", () => {
+  sidebar.style.display = "none";
 });

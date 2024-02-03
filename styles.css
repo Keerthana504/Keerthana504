@@ -47,6 +47,8 @@ h1 {
 /* justify-center" is used to horizontally center elements within their container, 
   while "align-items-center" is used to vertically center elements within their container */
 
+/**************** Navigation  ***************************/
+
 .logo {
   font-family: cursive;
   font-size: 2.2rem;
@@ -58,7 +60,7 @@ h1 {
 .nav-bar {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   width: 100%;
@@ -71,6 +73,7 @@ h1 {
 
 .nav-links {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   justify-content: center;
   /* font-family: serif; */
@@ -96,6 +99,42 @@ h1 {
 .nav-links a:hover {
   font-size: large;
   text-decoration: underline;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  z-index: 999;
+  height: 100vh;
+  background-color: rgb(175, 173, 173);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar a {
+  width: 100%;
+}
+
+.sidebar li:last-child {
+  margin-right: 0px;
+}
+
+.nav-links .menu-button {
+  display: none;
+}
+
+.nav-bar .main-bar {
+  display: flex;
 }
 
 .no-margin {
@@ -464,7 +503,7 @@ article .btn {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 400px;
+  height: max-content;
   font-size: 1.2rem;
   flex-wrap: wrap;
 }
@@ -480,7 +519,7 @@ article .btn {
 .project-1 a,
 .project-2 a {
   padding: 10px;
-  width: 400px;
+  width: max-content;
   margin: 20px;
   cursor: pointer;
   border: none;
@@ -529,6 +568,8 @@ article .btn {
 .links {
   margin-top: 50px;
   text-align: left;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .bg-2,
@@ -570,6 +611,7 @@ article .btn {
 
 .projects-show-more img {
   width: 30%;
+  max-width: 100%;
   object-fit: cover;
 }
 
@@ -580,7 +622,7 @@ article .btn {
   display: flex;
   gap: 30px;
   align-items: center;
-  padding: 20px 135px;
+  padding: 100px;
 }
 
 .quotes-container {
@@ -677,8 +719,11 @@ article .btn {
 }
 
 .contact-container {
-  height: 80vh;
+  height: max-content;
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
   align-items: center;
   justify-content: space-evenly;
   background: repeating-linear-gradient(90deg, #4017a0, #e3f75a);
@@ -691,7 +736,7 @@ article .btn {
   gap: 20px;
 }
 
-.contact-left-title h2 {
+.contact-left-title h4 {
   font-weight: 700;
   font-size: 2rem;
   margin-bottom: 5px;
@@ -776,6 +821,7 @@ article .btn {
 
 .contact-right p {
   margin-bottom: 40px;
+  color: #ffffff;
 }
 
 .contact-right span {
@@ -799,6 +845,72 @@ footer nav {
   gap: 20px;
 }
 
-footer .copy-right {
+footer .copy-right li {
   font-size: 12px;
+  list-style: none;
+}
+
+@media (max-width: 480px) {
+  .contact-inputs {
+    width: max-content;
+  }
+}
+
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none !important;
+  }
+  .sidebar {
+    width: 100%;
+    height: 40%;
+  }
+  .menu-button {
+    display: block !important;
+  }
+  .skills {
+    display: none !important;
+  }
+  .right-col h4 {
+    opacity: 0;
+  }
+
+  #about article {
+    padding: 0 !important;
+  }
+  .quotes-sec,
+  .credits {
+    display: none;
+  }
+  .project-1,
+  .project-2 {
+    height: max-content;
+  }
+
+  .project-1 div,
+  .project-2 div {
+    flex-basis: unset;
+    padding: 10px 10px 20px 10px;
+  }
+  .project-2 .img-2,
+  .img-1 {
+    flex-basis: unset;
+    width: 100%;
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .project-1 a,
+  .project-2 a {
+    margin: 4px;
+  }
+
+  .show-more-btn,
+  article .btn,
+  .btn {
+    width: 50%;
+  }
+
+  .contact-container {
+    height: max-content;
+  }
 }
