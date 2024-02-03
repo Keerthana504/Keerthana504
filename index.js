@@ -131,16 +131,6 @@ moveLeft.addEventListener("click", () => {
 
 // ************************ Responsive Navigation ******************
 
-const showSidebar = () => {
-  const sidebar = document.querySelector(".sidebar");
-  sidebar.style.display = "flex";
-};
-
-const hideSidebar = () => {
-  const sidebar = document.querySelector(".sidebar");
-  sidebar.style.display = "none";
-};
-
 const sidebar = document.querySelector(".sidebar");
 const menuButton = document.querySelector(".menu-button");
 
