@@ -375,7 +375,7 @@ section {
 .right-col h2 {
   position: absolute;
   top: 50%;
-  right: 26%;
+  right: 20%;
   font-size: 40px;
   font-weight: 300;
   color: #cdc1eb;
@@ -768,6 +768,7 @@ article .btn {
   padding-left: 30px;
   font-size: 1rem;
   color: #4017a0;
+  font-family: sans-serif !important;
 }
 
 .contact-left textarea {
